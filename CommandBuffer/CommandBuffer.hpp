@@ -4,6 +4,11 @@
 class CommandBuffer {
 	public:
 		CommandBuffer();
+		int PushCommand();
+		int InterruptBuffer();
+
+	private:
+		int IssueCommand();
 }
 
 #endif
